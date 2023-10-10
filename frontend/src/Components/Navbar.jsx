@@ -92,17 +92,17 @@ export const Navbar = () => {
       </nav>
       <div
         className="offcanvas offcanvas-end"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasRight"
       >
         <div className="offcanvas-header">
-          <a className="offcanvas-logo" href="index_2.html">
+          <Link className="offcanvas-logo" to="index_2.html">
             <img
               src="images/logo2.png"
               alt="ZAYAN"
               className="img-fluid w-100"
             />
-          </a>
+          </Link>
           <button
             type="button"
             className="btn-close"
