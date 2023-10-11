@@ -15,11 +15,12 @@ import { Subscribe } from "./Components/Subscribe";
 import { ScrollButton } from "./Components/ScrollButton";
 import { PreLoader } from "./Components/PreLoader";
 import { Cursor } from "./Components/Cursor";
-import $ from jquery;
-import { useEffect } from "react";
+
 function App() {
-  useEffect()=> {
-    
+  // myScript.js
+  function myFunction() {
+    const elements = document.querySelectorAll(".my-element");
+    // Your JavaScript code here
   }
   return (
     <div className="App">

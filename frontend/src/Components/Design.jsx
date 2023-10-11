@@ -36,7 +36,10 @@ export const Design = () => {
                       />
                     </span>
                     <h3>
-                      <span className="counter">10</span>k+
+                      <span className="counter" data-count="100">
+                        10
+                      </span>
+                      k+
                     </h3>
                     <p>Complete project</p>
                   </div>
@@ -54,7 +57,10 @@ export const Design = () => {
                       />
                     </span>
                     <h3>
-                      <span className="counter">800</span>+
+                      <span className="counter" data-count="10000">
+                        800
+                      </span>
+                      +
                     </h3>
                     <p>Client review</p>
                   </div>
