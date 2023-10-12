@@ -13,8 +13,10 @@ import { Blog } from "./Components/Blog";
 import { Footer } from "./Components/Footer";
 import { Subscribe } from "./Components/Subscribe";
 import { ScrollButton } from "./Components/ScrollButton";
-import { PreLoader } from "./Components/PreLoader";
 import { Cursor } from "./Components/Cursor";
+import { BreadCrumb } from "./Components/BreadCrumb";
+import { Contact } from "./Components/Contact";
+import BlogListPage from "./Components/BlogList";
 
 function App() {
   // myScript.js
@@ -30,7 +32,6 @@ function App() {
             path="/"
             element={
               <>
-                <PreLoader />
                 <Navbar /> <Banner />
                 <Services />
                 <About />
@@ -44,6 +45,42 @@ function App() {
                 <Footer />
                 <ScrollButton />
                 <Cursor />
+              </>
+            }
+          />
+          <Route
+            path="/contact.html"
+            element={
+              <>
+                <Navbar />
+                <BreadCrumb page="Contact" />
+                <Contact />
+                <Subscribe />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/blog_list.html"
+            element={
+              <>
+                <Navbar />
+                <BreadCrumb page="Blog List" />
+                <BlogListPage />
+                <Subscribe />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/blog_details.html"
+            element={
+              <>
+                <Navbar />
+                <BreadCrumb page="Blog List" />
+                <BlogListPage />
+                <Subscribe />
+                <Footer />
               </>
             }
           />
